@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:900');
+
+:root {
+  --main-bg-color: #eee;
+  --main-type-color: #333;
+}
+
+body {
+  font-family: "Georgia", serif;
+  color: var(--main-type-color);
+  background: var(--main-bg-color);
+}
+
+.wrapper {
+  max-width: 745px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,h2,h3 { font-family: "Noto Serif SC", serif;}
+
+h1 {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  font-size: 53px;
+  text-shadow: 2px 2px 0px var(--main-bg-color),
+               1px 1px 0px var(--main-bg-color),
+               0px 0px 0px var(--main-bg-color),
+               -1px -1px 0px var(--main-bg-color),
+               -2px -2px 0px var(--main-bg-color);
+}
+h1:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  background: blue;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: 5px;
+}
